@@ -1,36 +1,120 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NFT Community Landing Page
 
-## Getting Started
+## Project Overview
 
-First, run the development server:
+This project is a modern Web3 / NFT landing page built as a Minimum Viable Product (MVP) for an NFT community.
 
-```bash
+The website serves as the main hub for presenting the NFT collection, its vision, roadmap, and community channels, with a strong focus on premium design, smooth animations, usability, and performance.
+
+The architecture is designed to support future Web3 integrations such as wallet connection, on-chain data, and dynamic NFT galleries.
+
+---
+
+## Features
+
+- Fully responsive (desktop & mobile)
+- Dark, premium Web3 UI
+- Scroll-based animations
+- Letter-by-letter animated headings
+- Micro-interactions on hover (cards & buttons)
+- NFT gallery (static, on-chain ready)
+- Community links (Discord, X/Twitter, Telegram)
+- FAQ section
+- Footer with legal information
+- Optimized images using Next.js Image component
+
+---
+
+## Tech Stack
+
+- Framework: Next.js (App Router)
+- Language: TypeScript
+- Styling: Tailwind CSS
+- Animations: Framer Motion
+- Image Optimization: next/image
+- Runtime: Node.js 18+
+
+---
+
+## Project Structure
+
+app/
+├─ components/
+│ ├─ AnimatedSection.tsx
+│ ├─ AnimatedText.tsx
+│ └─ HoverCard.tsx
+├─ page.tsx
+├─ layout.tsx
+public/
+└─ nfts/
+├─ nft1.png
+├─ nft2.png
+├─ nft3.png
+└─ nft4.png
+
+---
+
+## Getting Started (Local Development)
+
+Install dependencies:
+
+npm install
+
+Run the development server:
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open in browser:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Production Build
 
-To learn more about Next.js, take a look at the following resources:
+npm run build  
+npm start
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deployment
 
-## Deploy on Vercel
+### Vercel (Recommended)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Push the project to a GitHub repository
+2. Go to https://vercel.com
+3. Import the repository
+4. Click Deploy
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+No additional configuration is required.
+
+---
+
+## Web3 & Wallet Integration
+
+Wallet integration (MetaMask / WalletConnect) is intentionally not implemented in this MVP.
+
+The UI already includes a prepared entry point (Connect Wallet button). Wallet functionality can be added safely in a future development phase without refactoring the UI.
+
+---
+
+## Future Improvements
+
+- Wallet integration (MetaMask / WalletConnect)
+- Dynamic NFT gallery using on-chain data
+- DAO / governance features
+- API-driven roadmap and FAQ
+- SEO optimization
+- Multi-language support
+
+---
+
+## License
+
+This project is delivered as a custom MVP for an NFT / Web3 client. Usage and redistribution depend on client agreement.
+
+---
+
+## Author
+
+Web Developer specialized in Web3 & NFT landing pages using Next.js and TypeScript.
