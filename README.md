@@ -117,4 +117,4 @@ This project is delivered as a custom MVP for an NFT / Web3 client. Usage and re
 
 ## Author
 
-Web Developer specialized in Web3 & NFT landing pages using Next.js and TypeScript.
+Full-Stack Developer | React & Next.js | Node.js | Supabase | SaaS & MVP
