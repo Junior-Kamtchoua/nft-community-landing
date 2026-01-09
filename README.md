@@ -111,7 +111,7 @@ The UI already includes a prepared entry point (Connect Wallet button). Wallet f
 
 ## License
 
-This project is delivered as a custom MVP for an NFT / Web3 client. Usage and redistribution depend on client agreement.
+This project is delivered as a custom MVP for an NFT / Web3 personnal project. Usage and redistribution depend on author agreement.
 
 ---
 
