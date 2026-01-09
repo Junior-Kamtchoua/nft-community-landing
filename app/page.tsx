@@ -10,7 +10,11 @@ export default function Home() {
     <main className="min-h-screen bg-black text-white overflow-x-hidden">
       {/* HERO SECTION */}
       <AnimatedSection className="px-6 py-32">
-        <div className="flex min-h-screen flex-col items-center justify-center text-center">
+        <div
+          className="text-4xl sm:text-5xl md:text-7xl
+           font-extrabold tracking-tight
+           whitespace-nowrap"
+        >
           <AnimatedText
             text="NFT COMMUNITY"
             as="h1"
