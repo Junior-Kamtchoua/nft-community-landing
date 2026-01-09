@@ -32,3 +32,10 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@media (max-width: 768px) {
+  img {
+    backface-visibility: hidden;
+    transform: translateZ(0);
+  }
+}

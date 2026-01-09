@@ -148,18 +148,22 @@ export default function Home() {
 
           <div className="mt-16 grid gap-8 sm:grid-cols-2 md:grid-cols-4">
             {["nft1.png", "nft2.png", "nft3.png", "nft4.png"].map((nft) => (
-              <HoverCard
+              <div
                 key={nft}
-                className="rounded-xl overflow-hidden border border-gray-800 bg-gray-900"
+                className="relative aspect-square overflow-hidden rounded-xl
+                 border border-gray-800 bg-gray-900
+                 hover:brightness-110 transition"
               >
                 <Image
                   src={`/nfts/${nft}`}
                   alt="NFT Preview"
-                  width={300}
-                  height={300}
-                  className="w-full h-full object-cover"
+                  fill
+                  sizes="(max-width: 640px) 100vw,
+               (max-width: 1024px) 50vw,
+               25vw"
+                  className="object-cover"
                 />
-              </HoverCard>
+              </div>
             ))}
           </div>
         </div>
